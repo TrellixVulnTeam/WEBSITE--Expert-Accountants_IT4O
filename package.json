@@ -1,0 +1,22 @@
+{
+  "name": "expert-accountants",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Paul C.",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/civas3/WEBSITE--Expert-Accountants.git"
+  },
+  "bugs": {
+    "url": "https://github.com/civas3/WEBSITE--Expert-Accountants/issues"
+  },
+  "homepage": "https://github.com/civas3/WEBSITE--Expert-Accountants#readme",
+  "description": ""
+}
