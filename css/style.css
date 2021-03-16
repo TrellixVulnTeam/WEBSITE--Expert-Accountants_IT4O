@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*abstracts*/
+/*
+0 - 320px:      Smaller mobile phones
+320 - 360px:    Medium mobile phones
+360 - 480px:    Biger mobile phones
+480 - 768px:    Tablet portrait
+768 - 1024px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- s-phone
+- m-phone
+- b-phone
+- tab-port
+- tab-land
+- large-desktop
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+/*base*/
+/*
+      -webkit-animation-name: zoomInDown;
+      animation-name: zoomInDown;
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes leftToRight {
+  0% {
+    width: 0; }
+  66% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@-webkit-keyframes leftToRight {
+  0% {
+    width: 0; }
+  66% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@-webkit-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif; }
+  html section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (min-width: 75em) {
+      html section {
+        min-height: 100vh; } }
+
+/*“Web typography” refers to the appearance of all the text on your website. It includes basic 
+CSS text properties like what font to use and whether it should be italic or not, but typography 
+is much more than that. It’s about the space between and around letters, words, and lines. It’s 
+the size of different runs of text in relation to one another, and the history behind each font family.
+
+https://www.internetingishard.com/html-and-css/web-typography/
+*/
+/* !!!!___ Use % rather than px for all layout-related lenghts (including pictures) ___!!!! */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IM Fell English', serif;
+  text-transform: uppercase; }
+
+p {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  line-height: 3rem; }
+
+.section-header {
+  font-size: 3.8rem; }
+  @media only screen and (min-width: 48em) {
+    .section-header {
+      font-size: 5.6rem; } }
+  @media only screen and (min-width: 75em) {
+    .section-header {
+      font-size: 6rem; } }
+
+.intro-header {
+  font-size: 2.8rem; }
+  @media only screen and (min-width: 48em) {
+    .intro-header {
+      font-size: 3.6rem; } }
+  @media only screen and (min-width: 75em) {
+    .intro-header {
+      font-size: 6rem; } }
+
+.image-banner {
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  @media only screen and (min-width: 30em) {
+    .image-banner {
+      height: 60vh; } }
+
+.responsive-element {
+  width: 100%;
+  min-height: 500px; }
+
+.responsive-video {
+  width: 100% !important;
+  min-height: 50rem;
+  height: auto !important; }
+  @media only screen and (min-width: 64em) {
+    .responsive-video {
+      min-height: 30rem; } }
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000ec;
+  opacity: 0.5;
+  z-index: 3; }
+
+/*components*/
+/*layout*/
+/*pages*/

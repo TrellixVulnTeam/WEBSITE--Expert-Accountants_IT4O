@@ -1,0 +1,43 @@
+
+
+
+//IMAGE-BANNER
+.image-banner {
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include respond(b-phone) {
+    height: 60vh;
+  }
+}
+//RESPONSIVE ELEMENT
+.responsive-element {
+  width: 100%; 
+  min-height: 500px;
+}
+
+//RESPONSIVE VIDEO
+.responsive-video {
+  width: 100% !important;
+  min-height: 50rem;
+  @include respond(tab-land) {
+    min-height: 30rem;
+  }
+  height: auto !important;
+}
+
+
+//OVERLAY
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000ec;
+  opacity: 0.5;
+  z-index: 3;
+}
