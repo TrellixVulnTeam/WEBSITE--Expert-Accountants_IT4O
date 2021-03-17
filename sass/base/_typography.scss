@@ -11,35 +11,41 @@ https://www.internetingishard.com/html-and-css/web-typography/
 h1, h2, h3, h4, h5, h6{
     font-family: 'IM Fell English', serif;
     text-transform: uppercase;
+    font-size: 2.2rem !important;
 }
 
 p{
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
     padding-bottom: 1rem;  
     line-height: 3rem; 
 }
 
+li,a, button{
+  font-size: 1.8rem !important;
+}
+
+label, .box{
+  font-size: 1.5rem !important;
+}
+
+.form-control, .form-select{
+  font-size: 1.7rem !important;
+}
+
+
 //SECTION HEADER
 .section-header{
-    font-size: 3.8rem;
+    font-size: 3.3rem !important;
+    text-transform: capitalize;
     @include respond(tab-port) {
-      font-size: 5.6rem;
+      font-size: 3.8rem !important;
     }
     @include respond(large-desktop) {
-      font-size: 6rem;
+      font-size: 6rem !important;
     }
 }
 
-//INTRO HEADER
-.intro-header{
-  font-size: 2.8rem;
-  @include respond(tab-port) {
-    font-size: 3.6rem;
-  }
-  @include respond(large-desktop) {
-    font-size: 6rem;
-  }
-}
+
 
 
 

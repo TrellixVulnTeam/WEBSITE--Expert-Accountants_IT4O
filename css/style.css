@@ -103,12 +103,10 @@ html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif; }
   html section {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    margin-top: 10rem; }
     @media only screen and (min-width: 75em) {
       html section {
-        min-height: 100vh; } }
+        min-height: 80vh; } }
 
 /*“Web typography” refers to the appearance of all the text on your website. It includes basic 
 CSS text properties like what font to use and whether it should be italic or not, but typography 
@@ -120,30 +118,32 @@ https://www.internetingishard.com/html-and-css/web-typography/
 /* !!!!___ Use % rather than px for all layout-related lenghts (including pictures) ___!!!! */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'IM Fell English', serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2.2rem !important; }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   padding-bottom: 1rem;
   line-height: 3rem; }
 
-.section-header {
-  font-size: 3.8rem; }
-  @media only screen and (min-width: 48em) {
-    .section-header {
-      font-size: 5.6rem; } }
-  @media only screen and (min-width: 75em) {
-    .section-header {
-      font-size: 6rem; } }
+li, a, button {
+  font-size: 1.8rem !important; }
 
-.intro-header {
-  font-size: 2.8rem; }
+label, .box {
+  font-size: 1.5rem !important; }
+
+.form-control, .form-select {
+  font-size: 1.7rem !important; }
+
+.section-header {
+  font-size: 3.3rem !important;
+  text-transform: capitalize; }
   @media only screen and (min-width: 48em) {
-    .intro-header {
-      font-size: 3.6rem; } }
+    .section-header {
+      font-size: 3.8rem !important; } }
   @media only screen and (min-width: 75em) {
-    .intro-header {
-      font-size: 6rem; } }
+    .section-header {
+      font-size: 6rem !important; } }
 
 .image-banner {
   height: 40vh;
@@ -157,7 +157,19 @@ p {
 
 .responsive-element {
   width: 100%;
-  min-height: 500px; }
+  min-height: auto; }
+
+.hero-image {
+  background-image: url("../images/contact/contact.svg");
+  /* The image used */
+  height: 800px;
+  /* You must set a specified height */
+  background-position: center center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: fit;
+  /* Resize the background image to cover the entire container */ }
 
 .responsive-video {
   width: 100% !important;
