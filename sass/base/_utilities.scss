@@ -28,6 +28,31 @@
   background-size: fit; /* Resize the background image to cover the entire container */
 }
 
+//BACKGROUND COLORS
+.bg-color-pgray{
+  background-color: #C9CEBD;
+  transition: 0.3s;
+  &:hover{
+    background-color: lighten($color: #C9CEBD, $amount: 5%) !important;
+  }
+}
+.bg-color-pgreen{
+  background-color: #3E8914 !important;
+  color: $white !important;
+  transition: 0.4s !important;
+  &:hover{
+    background-color: darken($color: $primary-green, $amount: 8%) !important;
+  }
+}
+.bg-color-pblue{
+  background-color: #3772FF !important;
+  color: $white !important;
+  transition: 1s !important;
+  &:hover{
+    background-color: darken($color: $primary-blue, $amount: 20%) !important;
+  }
+}
+
 
 //RESPONSIVE VIDEO
 .responsive-video {
