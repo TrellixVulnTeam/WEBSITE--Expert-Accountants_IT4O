@@ -177,25 +177,53 @@ label, .box {
   background-size: fit;
   /* Resize the background image to cover the entire container */ }
 
+.btn:hover {
+  transition: 0.6s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: brightness(1);
+  -moz-filter: brightness(1);
+  -ms-filter: brightness(1);
+  filter: brightness(1); }
+
+.no-shaking {
+  opacity: 1; }
+
 .bg-color-pgray {
   background-color: #c9cebd;
-  transition: 0.3s; }
+  transition: 0.3s;
+  -webkit-box-shadow: 1px 12px 13px -4px #c9cebd;
+  -moz-box-shadow: 1px 12px 13px -4px #c9cebd;
+  box-shadow: 1px 12px 13px -4px #c9cebd; }
   .bg-color-pgray:hover {
     background-color: #d5d9cc !important; }
 
 .bg-color-pgreen {
   background-color: #3e8914 !important;
   color: #ffffff !important;
-  transition: 0.4s !important; }
+  transition: 0.4s !important;
+  -webkit-box-shadow: 1px 12px 13px -4px #c9cebd;
+  -moz-box-shadow: 1px 12px 13px -4px #c9cebd;
+  box-shadow: 1px 12px 13px -4px #c9cebd; }
   .bg-color-pgreen:hover {
     background-color: #2e650f !important; }
 
 .bg-color-pblue {
   background-color: #3772ff !important;
   color: #ffffff !important;
-  transition: 1s !important; }
+  transition: 1s !important;
+  -webkit-box-shadow: 1px 12px 13px -4px #c9cebd;
+  -moz-box-shadow: 1px 12px 13px -4px #c9cebd;
+  box-shadow: 1px 12px 13px -4px #c9cebd; }
   .bg-color-pblue:hover {
     background-color: #003dd0 !important; }
+
+.gray-shadow-bottom {
+  -webkit-box-shadow: 1px 12px 13px -4px #c9cebd;
+  -moz-box-shadow: 1px 12px 13px -4px #c9cebd;
+  box-shadow: 1px 12px 13px -4px #c9cebd !important; }
 
 .box-border {
   background-image: linear-gradient(#fa233b, #fa233b), linear-gradient(#fa233b, #fa233b), linear-gradient(#fa233b, #fa233b), linear-gradient(#fa233b, #fa233b), linear-gradient(#c0bdbd23, #c0bdbd23);
@@ -282,3 +310,24 @@ label, .box {
       border-left: 5px solid #ffffff; }
 
 /*pages*/
+.card:hover {
+  transition: 0.6s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-filter: brightness(1);
+  -moz-filter: brightness(1);
+  -ms-filter: brightness(1);
+  filter: brightness(1); }
+
+.bd-placeholder-img:hover {
+  transition: 0.6s;
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+  -webkit-filter: brightness(1);
+  -moz-filter: brightness(1);
+  -ms-filter: brightness(1);
+  filter: brightness(1); }

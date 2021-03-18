@@ -24,11 +24,24 @@
   background-size: fit; /* Resize the background image to cover the entire container */
 }
 
+//BUTTONS
+.btn{
+  &:hover{
+    @include scale-up(1.1, 1);
+  }
+}
+
+.no-shaking{
+  opacity: 1;
+}
+
 //BACKGROUND COLORS
 .bg-color-pgray {
   background-color: #c9cebd;
   transition: 0.3s;
-
+  -webkit-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+-moz-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
   &:hover {
     background-color: lighten($color: #c9cebd, $amount: 5%) !important;
   }
@@ -37,7 +50,9 @@
   background-color: #3e8914 !important;
   color: $white !important;
   transition: 0.4s !important;
-
+  -webkit-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+-moz-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
   &:hover {
     background-color: darken($color: $primary-green, $amount: 8%) !important;
   }
@@ -46,11 +61,23 @@
   background-color: #3772ff !important;
   color: $white !important;
   transition: 1s !important;
-
+  -webkit-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+-moz-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
   &:hover {
     background-color: darken($color: $primary-blue, $amount: 20%) !important;
   }
 }
+
+//SHADOW
+.gray-shadow-bottom{
+  -webkit-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+-moz-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+box-shadow: 1px 12px 13px -4px rgba(201,206,189,1) !important;
+}
+
+
+
 
 //BORDER BOX
 .box-border {

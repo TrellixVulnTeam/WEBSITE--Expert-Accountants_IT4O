@@ -1,0 +1,5 @@
+.bd-placeholder-img{
+    &:hover{
+        @include scale-up(1.4, 1);
+      }
+}
