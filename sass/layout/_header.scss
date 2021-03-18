@@ -1,0 +1,70 @@
+
+
+
+.navbar-toggler{
+   // border: $primary-gray solid 0.1rem !important;
+    padding: 2.5rem 1.5rem !important;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    background-image: url("../images/burger.png"); 
+    height: 5rem; 
+    width: auto;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    // to do task change image when open 
+}
+
+.navbar-nav, .dropdown-menu{
+    background-color: #f6f5f5!important;  
+    .nav-link, .dropdown-item{
+        color: $primary-black !important;
+        text-align: center;
+       // border-bottom: $primary-gray solid 0.1rem;
+        letter-spacing: 0.1rem;
+        font-size: 2rem !important;
+        font-weight: 600;
+        transition: 0.6s;
+        @include respond(tab-land) {
+            font-size: 1.9rem !important;
+            padding: 0.2rem 0.5rem !important;
+        }
+        &:hover{
+            background-color: $primary-red !important;
+            color: $white !important;
+    }
+}
+}
+.nav-item{
+    margin-top: 3rem;
+    @include respond(tab-land) {
+        margin-right: 2rem;
+    }
+    .dropdown-item{
+        margin-top: 2rem;
+        background-color: #efeded !important;
+        @include respond(tab-land) {
+            margin-top: 0.8rem;
+        }
+        &:hover{
+            &::before{
+                content: " ";
+         display:inline-block;
+         margin-right: 0.7rem;
+         width: 0; 
+         height: 0; 
+         border-bottom: 5px solid transparent; 
+         border-top: 5px solid transparent; 
+         border-left: 5px solid $white;
+           }
+
+        }
+    
+        
+    }
+    
+
+}
+
+

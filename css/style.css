@@ -103,7 +103,7 @@ html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif; }
   html body {
-    background-color: rgba(192, 189, 189, 0.137) !important; }
+    background-color: #c0bdbd23 !important; }
   html section {
     margin-top: 10rem; }
     @media only screen and (min-width: 75em) {
@@ -178,24 +178,38 @@ label, .box {
   /* Resize the background image to cover the entire container */ }
 
 .bg-color-pgray {
-  background-color: #C9CEBD;
+  background-color: #c9cebd;
   transition: 0.3s; }
   .bg-color-pgray:hover {
     background-color: #d5d9cc !important; }
 
 .bg-color-pgreen {
-  background-color: #3E8914 !important;
+  background-color: #3e8914 !important;
   color: #ffffff !important;
   transition: 0.4s !important; }
   .bg-color-pgreen:hover {
     background-color: #2e650f !important; }
 
 .bg-color-pblue {
-  background-color: #3772FF !important;
+  background-color: #3772ff !important;
   color: #ffffff !important;
   transition: 1s !important; }
   .bg-color-pblue:hover {
     background-color: #003dd0 !important; }
+
+.box-border {
+  background-image: linear-gradient(#fa233b, #fa233b), linear-gradient(#fa233b, #fa233b), linear-gradient(#fa233b, #fa233b), linear-gradient(#fa233b, #fa233b), linear-gradient(#c0bdbd23, #c0bdbd23);
+  background-repeat: no-repeat;
+  background-size: 0.2rem 50%, 10% 0.2rem, 0.2rem 50%, 10% 0.2rem, calc(100% - 8px) calc(100% - 8px);
+  background-position: left bottom, left bottom, right top, right top, 0.5rem 0.5rem;
+  height: inherit;
+  width: inherit;
+  -webkit-box-shadow: 1px 12px 13px -4px #c9cebd;
+  -moz-box-shadow: 1px 12px 13px -4px #c9cebd;
+  box-shadow: 1px 12px 13px -4px #c9cebd; }
+  @media only screen and (min-width: 64em) {
+    .box-border {
+      background-image: none; } }
 
 .responsive-video {
   width: 100% !important;
@@ -217,4 +231,54 @@ label, .box {
 
 /*components*/
 /*layout*/
+.navbar-toggler {
+  padding: 2.5rem 1.5rem !important;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  background-image: url("../images/burger.png");
+  height: 5rem;
+  width: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.navbar-nav, .dropdown-menu {
+  background-color: #f6f5f5 !important; }
+  .navbar-nav .nav-link, .navbar-nav .dropdown-item, .dropdown-menu .nav-link, .dropdown-menu .dropdown-item {
+    color: #0D0A0B !important;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 2rem !important;
+    font-weight: 600;
+    transition: 0.6s; }
+    @media only screen and (min-width: 64em) {
+      .navbar-nav .nav-link, .navbar-nav .dropdown-item, .dropdown-menu .nav-link, .dropdown-menu .dropdown-item {
+        font-size: 1.9rem !important;
+        padding: 0.2rem 0.5rem !important; } }
+    .navbar-nav .nav-link:hover, .navbar-nav .dropdown-item:hover, .dropdown-menu .nav-link:hover, .dropdown-menu .dropdown-item:hover {
+      background-color: #fa233b !important;
+      color: #ffffff !important; }
+
+.nav-item {
+  margin-top: 3rem; }
+  @media only screen and (min-width: 64em) {
+    .nav-item {
+      margin-right: 2rem; } }
+  .nav-item .dropdown-item {
+    margin-top: 2rem;
+    background-color: #efeded !important; }
+    @media only screen and (min-width: 64em) {
+      .nav-item .dropdown-item {
+        margin-top: 0.8rem; } }
+    .nav-item .dropdown-item:hover::before {
+      content: " ";
+      display: inline-block;
+      margin-right: 0.7rem;
+      width: 0;
+      height: 0;
+      border-bottom: 5px solid transparent;
+      border-top: 5px solid transparent;
+      border-left: 5px solid #ffffff; }
+
 /*pages*/

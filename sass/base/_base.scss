@@ -16,7 +16,7 @@ html {
   @include respond(big-desktop) {
   }
 body{
-  background-color: rgba(192, 189, 189, 0.137) !important;
+  background-color: $background-color !important;
 
 }
   
