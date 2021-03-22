@@ -1,0 +1,53 @@
+footer{
+    background-color: $primary-gray;
+    //padding-bottom: 3rem;
+    //border-top: none;
+    -webkit-box-shadow: 2px -21px 38px 15px rgba(201,206,189,1);
+    -moz-box-shadow: 2px -21px 38px 15px rgba(201,206,189,1);
+    box-shadow: 2px -21px 38px 15px rgba(201,206,189,1) !important;
+            .text-effect{
+        color: royalblue;
+        background: linear-gradient(to right, $primary-red, $primary-red 50%, $primary-black 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        text-decoration: none; // text decorations are clipped in WebKit browsers
+        font-size: 1.6rem !important;
+        &:hover {
+          background-position: 0 100%;
+        }
+      }
+      .col-12{
+        margin-top: 5rem;
+      }
+     
+      h5{
+        //margin-bottom: 2rem;
+        //stext-decoration: underline $primary-red solid 1.2rem;
+        margin-bottom: 1rem;   
+        font-weight: bold;
+      }
+      li{
+        margin-top: 2rem;
+        @include respond(large-desktop) {
+          margin-top: 0.2rem;
+        }
+
+      }
+      iframe{
+        width: 30rem;
+        height: auto;
+        @include respond (tab-port){
+          width: 20rem;
+          height: auto;
+        }
+        @include respond (large-desktop){
+          width: auto;
+        }
+      }
+    }
+
+
