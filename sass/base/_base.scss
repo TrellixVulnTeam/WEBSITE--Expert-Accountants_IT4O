@@ -20,14 +20,14 @@ body{
 
   section {
     margin-top: 10rem;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
+    &:first-child{
+     margin-top: 3rem; 
+    }
     @include respond(large-desktop) {
      min-height: 80vh;
-    // display: flex;
-     //justify-content: center;
-     //align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
  

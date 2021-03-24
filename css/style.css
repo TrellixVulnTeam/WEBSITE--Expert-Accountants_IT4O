@@ -106,9 +106,14 @@ html {
     background-color: #c0bdbd23 !important; }
   html section {
     margin-top: 10rem; }
+    html section:first-child {
+      margin-top: 3rem; }
     @media only screen and (min-width: 75em) {
       html section {
-        min-height: 80vh; } }
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
 
 /*“Web typography” refers to the appearance of all the text on your website. It includes basic 
 CSS text properties like what font to use and whether it should be italic or not, but typography 
