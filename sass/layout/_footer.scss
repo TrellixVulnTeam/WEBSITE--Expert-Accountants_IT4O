@@ -1,10 +1,13 @@
 footer{
     background-color: $primary-gray;
-    //padding-bottom: 3rem;
-    //border-top: none;
+    margin-top: 20rem;
     -webkit-box-shadow: 2px -21px 38px 15px rgba(201,206,189,1);
     -moz-box-shadow: 2px -21px 38px 15px rgba(201,206,189,1);
     box-shadow: 2px -21px 38px 15px rgba(201,206,189,1) !important;
+    &:hover{
+      -webkit-box-shadow: 2px -21px 38px 15px rgba(201,206,189,1);
+      -moz-box-shadow: 2px -21px 38px 15px rgba(201,206,189,1);
+      box-shadow: 2px -21px 38px 15px rgb(213, 217, 204) !important;    }
             .text-effect{
         color: royalblue;
         background: linear-gradient(to right, $primary-red, $primary-red 50%, $primary-black 50%);
@@ -23,6 +26,12 @@ footer{
       .col-12{
         margin-top: 5rem;
       }
+
+      img{
+        height: 15rem;
+        width: auto;
+    }
+     
      
       h5{
         //margin-bottom: 2rem;
@@ -32,7 +41,7 @@ footer{
       }
       li{
         margin-top: 2rem;
-        @include respond(large-desktop) {
+        @include respond(tab-port) {
           margin-top: 0.2rem;
         }
 
@@ -46,8 +55,13 @@ footer{
         }
         @include respond (large-desktop){
           width: auto;
+          height: 15rem;
         }
       }
+      .copyright-text{
+        font-size: 1.4rem !important;
+      }
+      
     }
 
 

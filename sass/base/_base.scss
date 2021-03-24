@@ -25,6 +25,9 @@ body{
     //align-items: center;
     @include respond(large-desktop) {
      min-height: 80vh;
+    // display: flex;
+     //justify-content: center;
+     //align-items: center;
     }
   }
  

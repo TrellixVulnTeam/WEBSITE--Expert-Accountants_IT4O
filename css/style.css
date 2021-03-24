@@ -317,10 +317,15 @@ label, .box {
       border-left: 5px solid #ffffff; }
 
 footer {
-  background-color: #C9CEBD;
+  background-color: #c9cebd;
+  margin-top: 20rem;
   -webkit-box-shadow: 2px -21px 38px 15px #c9cebd;
   -moz-box-shadow: 2px -21px 38px 15px #c9cebd;
   box-shadow: 2px -21px 38px 15px #c9cebd !important; }
+  footer:hover {
+    -webkit-box-shadow: 2px -21px 38px 15px #c9cebd;
+    -moz-box-shadow: 2px -21px 38px 15px #c9cebd;
+    box-shadow: 2px -21px 38px 15px #d5d9cc !important; }
   footer .text-effect {
     color: royalblue;
     background: linear-gradient(to right, #fa233b, #fa233b 50%, #0D0A0B 50%);
@@ -336,12 +341,15 @@ footer {
       background-position: 0 100%; }
   footer .col-12 {
     margin-top: 5rem; }
+  footer img {
+    height: 15rem;
+    width: auto; }
   footer h5 {
     margin-bottom: 1rem;
     font-weight: bold; }
   footer li {
     margin-top: 2rem; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 48em) {
       footer li {
         margin-top: 0.2rem; } }
   footer iframe {
@@ -353,7 +361,10 @@ footer {
         height: auto; } }
     @media only screen and (min-width: 75em) {
       footer iframe {
-        width: auto; } }
+        width: auto;
+        height: 15rem; } }
+  footer .copyright-text {
+    font-size: 1.4rem !important; }
 
 /*pages*/
 .card:hover {
