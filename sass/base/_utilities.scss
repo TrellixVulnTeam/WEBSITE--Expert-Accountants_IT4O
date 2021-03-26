@@ -1,38 +1,44 @@
-//IMAGE-BANNER
-.image-banner {
-  height: 40vh;
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
 
-  @include respond(b-phone) {
-    height: 60vh;
-  }
-}
 //RESPONSIVE ELEMENT
 .responsive-element {
   width: 100%;
   min-height: auto;
 }
 
-.hero-image {
-  background-image: url("../images/contact/contact.svg"); /* The image used */
-  height: 800px; /* You must set a specified height */
-  background-position: center center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: fit; /* Resize the background image to cover the entire container */
+//RESPONSIVE VIDEO
+.responsive-video {
+  width: 100% !important;
+  min-height: 50rem;
+  @include respond(tab-land) {
+    min-height: 30rem;
+  }
+  height: auto !important;
 }
+
+//TABLET VIEW IMAGES
+.for-tab-view{
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: center;
+    }
+  img{
+    @include respond(tab-port) {
+      width: 70%;
+      height: auto;
+      }
+    @include respond(tab-land) {
+      width: 100%;
+      height: auto;
+      }  
+  }
+}
+
 
 //BUTTONS
 .btn{
   &:hover{
     @include scale-up(1.1, 1);
   }
-}
-
-.no-shaking{
-  opacity: 1;
 }
 
 //BACKGROUND COLORS
@@ -76,9 +82,6 @@ box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
 box-shadow: 1px 12px 13px -4px rgba(201,206,189,1) !important;
 }
 
-
-
-
 //BORDER BOX
 .box-border {
     background-image: linear-gradient($primary-red, $primary-red),
@@ -98,27 +101,3 @@ box-shadow: 1px 12px 13px -4px rgba(201,206,189,1) !important;
 box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
 }
 
-
-
-
-//RESPONSIVE VIDEO
-.responsive-video {
-  width: 100% !important;
-  min-height: 50rem;
-  @include respond(tab-land) {
-    min-height: 30rem;
-  }
-  height: auto !important;
-}
-
-//OVERLAY
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #000000ec;
-  opacity: 0.5;
-  z-index: 3;
-}

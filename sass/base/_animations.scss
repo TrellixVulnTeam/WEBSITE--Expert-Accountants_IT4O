@@ -7,6 +7,41 @@
       animation-fill-mode: both;
 */
 
+//service-button
+@keyframes animate5_1 {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+@keyframes animate5_2 {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(100%);
+  }
+}
+@keyframes animate5_3 {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+@keyframes animate5_4 {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+
 
 //fadeIn
 @keyframes fadeIn {

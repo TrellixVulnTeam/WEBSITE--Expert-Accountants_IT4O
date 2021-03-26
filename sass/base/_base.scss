@@ -21,7 +21,7 @@ body{
   section {
     margin-top: 10rem;
     &:first-child{
-     margin-top: 3rem; 
+     margin-top: 5rem; 
     }
     @include respond(large-desktop) {
      min-height: 80vh;
@@ -31,4 +31,9 @@ body{
     }
   }
  
+  .featurette-divider{
+    margin:10rem 0;
+  }
+
+
 }

@@ -31,6 +31,30 @@ ORDER: Base + typography > general layout + grid > page layout > components
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both;
 */
+@keyframes animate5_1 {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(100%); } }
+
+@keyframes animate5_2 {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(100%); } }
+
+@keyframes animate5_3 {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(-100%); } }
+
+@keyframes animate5_4 {
+  0% {
+    transform: translateY(100%); }
+  100% {
+    transform: translateY(-100%); } }
+
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -107,13 +131,15 @@ html {
   html section {
     margin-top: 10rem; }
     html section:first-child {
-      margin-top: 3rem; }
+      margin-top: 5rem; }
     @media only screen and (min-width: 75em) {
       html section {
         min-height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center; } }
+  html .featurette-divider {
+    margin: 10rem 0; }
 
 /*“Web typography” refers to the appearance of all the text on your website. It includes basic 
 CSS text properties like what font to use and whether it should be italic or not, but typography 
@@ -156,31 +182,56 @@ label, .box {
     .section-header {
       font-size: 6rem !important; } }
 
-.image-banner {
-  height: 40vh;
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain; }
-  @media only screen and (min-width: 30em) {
-    .image-banner {
-      height: 60vh; } }
+.strugle-ul li {
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.customers-progress .progress-title h6 {
+  font-size: 1.8 !important; }
+
+.customers-progress .progress-quantity {
+  font-size: 2.5rem !important;
+  color: #fa233b;
+  text-shadow: #0D0A0B 0.1rem 0.1rem; }
+
+#carouselFeedback .carousel-indicators {
+  color: white; }
+
+#carouselFeedback .carousel-caption {
+  color: black; }
+
+.our-services__button {
+  font-weight: bold; }
+  .our-services__button:hover {
+    text-transform: uppercase;
+    color: #ffffff !important; }
 
 .responsive-element {
   width: 100%;
   min-height: auto; }
 
-.hero-image {
-  background-image: url("../images/contact/contact.svg");
-  /* The image used */
-  height: 800px;
-  /* You must set a specified height */
-  background-position: center center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: fit;
-  /* Resize the background image to cover the entire container */ }
+.responsive-video {
+  width: 100% !important;
+  min-height: 50rem;
+  height: auto !important; }
+  @media only screen and (min-width: 64em) {
+    .responsive-video {
+      min-height: 30rem; } }
+
+@media only screen and (min-width: 48em) {
+  .for-tab-view {
+    display: flex;
+    justify-content: center; } }
+
+@media only screen and (min-width: 48em) {
+  .for-tab-view img {
+    width: 70%;
+    height: auto; } }
+
+@media only screen and (min-width: 64em) {
+  .for-tab-view img {
+    width: 100%;
+    height: auto; } }
 
 .btn:hover {
   transition: 0.6s;
@@ -192,9 +243,6 @@ label, .box {
   -moz-filter: brightness(1);
   -ms-filter: brightness(1);
   filter: brightness(1); }
-
-.no-shaking {
-  opacity: 1; }
 
 .bg-color-pgray {
   background-color: #c9cebd;
@@ -243,24 +291,6 @@ label, .box {
   @media only screen and (min-width: 64em) {
     .box-border {
       background-image: none; } }
-
-.responsive-video {
-  width: 100% !important;
-  min-height: 50rem;
-  height: auto !important; }
-  @media only screen and (min-width: 64em) {
-    .responsive-video {
-      min-height: 30rem; } }
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #000000ec;
-  opacity: 0.5;
-  z-index: 3; }
 
 /*components*/
 /*layout*/
@@ -372,6 +402,115 @@ footer {
     font-size: 1.4rem !important; }
 
 /*pages*/
+.strugle-ul__left {
+  margin-top: 3rem; }
+  .strugle-ul__left li {
+    margin-top: 1.5rem; }
+
+.strugle-ul__right {
+  margin-bottom: 1.5rem; }
+  .strugle-ul__right li:not(:first-child) {
+    margin-top: 1.5rem; }
+
+@media only screen and (min-width: 48em) {
+  .strugle-ul {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem; }
+    .strugle-ul li {
+      margin-top: 1.5rem; } }
+
+.customers-progress {
+  margin-top: 1rem !important; }
+  .customers-progress .progress-title:not(:first-child) {
+    margin-top: 2rem; }
+  .customers-progress .progress-quantity {
+    padding: 0 1rem;
+    border: #c9cebd solid 0.2rem; }
+
+.small-screen__contact-button {
+  margin-top: 3rem !important; }
+
+#carouselFeedback .carousel-indicators button {
+  margin: 1rem; }
+
+#carouselFeedback .carousel-item {
+  width: 100%;
+  padding: 20rem 0 10rem 0; }
+  @media only screen and (min-width: 22.5em) {
+    #carouselFeedback .carousel-item {
+      padding: 15rem 0 10rem 0; } }
+  @media only screen and (min-width: 48em) {
+    #carouselFeedback .carousel-item {
+      padding: 10rem 0 10rem 0; } }
+
+#carouselFeedback .carousel-caption {
+  height: auto; }
+
+.our-services {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 3rem 0; }
+  .our-services__button {
+    min-width: 20rem;
+    margin-top: 1.5rem;
+    padding: 1rem 0 !important;
+    position: relative;
+    border: 0.1rem solid #3772FF !important;
+    overflow: hidden;
+    background: none;
+    transition: 1s; }
+    @media only screen and (min-width: 22.5em) {
+      .our-services__button {
+        width: 25rem; } }
+    @media only screen and (min-width: 48em) {
+      .our-services__button {
+        width: 30rem; } }
+    .our-services__button:hover {
+      background-color: #3772FF;
+      transition: 0.7s; }
+    .our-services__button::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      width: 50%;
+      background: #368d9909; }
+    .our-services__button .span5:nth-child(1) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0.12rem;
+      background: linear-gradient(to right, #fa233b, #fa233b);
+      animation: animate5_1 2s linear infinite; }
+    .our-services__button .span5:nth-child(2) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0.12rem;
+      height: 100%;
+      background: linear-gradient(to bottom, #fa233b, #fa233b);
+      animation: animate5_2 2s linear infinite;
+      animation-delay: 1s; }
+    .our-services__button .span5:nth-child(3) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.12rem;
+      background: linear-gradient(to left, #fa233b, #fa233b);
+      animation: animate5_3 2s linear infinite; }
+    .our-services__button .span5:nth-child(4) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.12rem;
+      height: 100%;
+      background: linear-gradient(to top, #fa233b, #fa233b);
+      animation: animate5_4 2s linear infinite;
+      animation-delay: 1s; }
+
 .card:hover {
   transition: 0.6s;
   -webkit-transform: scale(1.05);
@@ -393,3 +532,15 @@ footer {
   -moz-filter: brightness(1);
   -ms-filter: brightness(1);
   filter: brightness(1); }
+
+.hero-image {
+  background-image: url("../images/contact/contact.svg");
+  /* The image used */
+  height: 800px;
+  /* You must set a specified height */
+  background-position: center center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: fit;
+  /* Resize the background image to cover the entire container */ }

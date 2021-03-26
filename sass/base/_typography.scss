@@ -52,6 +52,54 @@ label, .box{
     }
 }
 
+//INDEX
+//We Are Here To Help If You Struguling With...
+.strugle-ul{
+  li{
+     font-weight: 500;
+     text-transform: uppercase;
+ }
+}
+
+//We Helped Thousands Of Customers
+.customers-progress {
+  .progress {
+    &-title {
+      h6 {
+        font-size: 1.8 !important;
+      }
+    }
+    &-quantity {
+      font-size: 2.5rem !important;
+      color: $primary-red;
+      text-shadow: $primary-black 0.1rem 0.1rem;
+    }
+  }
+}
+
+//This Is What Out Customers Say About Us.
+#carouselFeedback {
+  .carousel-indicators {
+    color: white;
+  }
+
+  .carousel-caption {
+    color: black;
+  }
+}
+
+//We Are Specialized Accountants Services We Provide..
+.our-services{
+  &__button{
+    font-weight: bold;
+    &:hover {
+      text-transform: uppercase;
+      color: $white !important;
+    }
+    }
+}
+
+
 
 
 
