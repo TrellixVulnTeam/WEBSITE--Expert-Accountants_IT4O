@@ -37,7 +37,7 @@
 //BUTTONS
 .btn{
   &:hover{
-    @include scale-up(1.1, 1);
+    @include scale-up(1.04, 1);
   }
 }
 
