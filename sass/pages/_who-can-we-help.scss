@@ -1,0 +1,95 @@
+.who-can-we-help{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  &__button{
+    min-width: 20rem;
+    @include respond(m-phone) {
+      width: 25rem;
+    }
+    @include respond(tab-port) {
+      width: 30rem;
+    }
+    margin-top: 1.5rem;
+    padding: 1rem 0 !important;
+    overflow: hidden !important;
+    position: relative;
+    transition: 1s;
+    background: none;
+    color: $white;
+    border: 0.1rem solid $primary-red !important; 
+    position: relative;
+    &:hover > span{
+        color: yellow !important;
+        text-transform: uppercase;
+    }
+   
+    //SPAN
+    .span32{
+        position: relative;
+        z-index: 1;
+        color: $white;
+       
+      }
+
+    //SPAN and LIQUID
+    .span32, .liquid32{
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            width: 140%;
+            height: 200%;
+            top: 5%; 
+            left: 28%;
+            transform: translate(-50%,-75%);
+            background: transparent;   
+             }  
+        }
+
+    //LIQUID
+    .liquid32{
+        position: absolute;
+        left: 0;
+        top: -8rem;
+        width: 100%;
+        height: 21rem;
+        background: $primary-blue;
+        box-shadow: inset 0 0 50px #00000080;
+        transition: 0.5s;
+        overflow: hidden;
+        &::before{
+            border-radius: 45%;
+            background: #1414142c;
+            animation: windWave 5s linear infinite;
+                }
+        &::after{
+            border-radius: 40%;
+            background: #14141425;
+            animation: windWave 10s linear infinite;
+                }
+      }
+    
+    }
+      
+}
+ 
+
+.growth-image{
+    justify-content: flex-start !important ;
+    align-items: flex-end;
+    margin-left: -8rem;
+    @include respond(tab-port) {
+        margin-left: -5rem;
+        }
+    @include respond(tab-land) {
+      img{
+        position: absolute !important;
+        width: 30%;
+        height: auto;
+        left: 0 !important;
+        }
+        }  
+    
+    
+
+}

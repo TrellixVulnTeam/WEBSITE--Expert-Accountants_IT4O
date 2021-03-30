@@ -31,29 +31,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both;
 */
-@keyframes animate5_1 {
+@keyframes focusBorder_1 {
   0% {
     transform: translateX(-100%); }
   100% {
     transform: translateX(100%); } }
 
-@keyframes animate5_2 {
+@keyframes focusBorder_2 {
   0% {
     transform: translateY(-100%); }
   100% {
     transform: translateY(100%); } }
 
-@keyframes animate5_3 {
+@keyframes focusBorder_3 {
   0% {
     transform: translateX(100%); }
   100% {
     transform: translateX(-100%); } }
 
-@keyframes animate5_4 {
+@keyframes focusBorder_4 {
   0% {
     transform: translateY(100%); }
   100% {
     transform: translateY(-100%); } }
+
+@keyframes windWave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg); }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg); } }
 
 @keyframes fadeIn {
   0% {
@@ -172,6 +178,9 @@ label, .box {
   color: #fa233b !important;
   text-shadow: #0D0A0B -0.1rem -0.1rem; }
 
+.accordion-button {
+  text-align: left; }
+
 .section-header {
   font-size: 3.3rem !important;
   text-transform: capitalize; }
@@ -234,6 +243,7 @@ label, .box {
     height: auto; } }
 
 .btn:hover {
+  color: yellow !important;
   transition: 0.6s;
   -webkit-transform: scale(1.04);
   -moz-transform: scale(1.04);
@@ -293,6 +303,9 @@ label, .box {
       background-image: none; } }
 
 /*components*/
+.accordion-button {
+  padding: 1.5rem 0 !important; }
+
 /*layout*/
 .navbar-brand {
   margin-left: 1rem;
@@ -483,7 +496,7 @@ footer {
       width: 100%;
       height: 0.12rem;
       background: linear-gradient(to right, #fa233b, #fa233b);
-      animation: animate5_1 2s linear infinite; }
+      animation: focusBorder_1 2s linear infinite; }
     .our-services__button .span5:nth-child(2) {
       position: absolute;
       top: 0;
@@ -491,7 +504,7 @@ footer {
       width: 0.12rem;
       height: 100%;
       background: linear-gradient(to bottom, #fa233b, #fa233b);
-      animation: animate5_2 2s linear infinite;
+      animation: focusBorder_2 2s linear infinite;
       animation-delay: 1s; }
     .our-services__button .span5:nth-child(3) {
       position: absolute;
@@ -500,7 +513,7 @@ footer {
       width: 100%;
       height: 0.12rem;
       background: linear-gradient(to left, #fa233b, #fa233b);
-      animation: animate5_3 2s linear infinite; }
+      animation: focusBorder_3 2s linear infinite; }
     .our-services__button .span5:nth-child(4) {
       position: absolute;
       top: 0;
@@ -508,8 +521,78 @@ footer {
       width: 0.12rem;
       height: 100%;
       background: linear-gradient(to top, #fa233b, #fa233b);
-      animation: animate5_4 2s linear infinite;
+      animation: focusBorder_4 2s linear infinite;
       animation-delay: 1s; }
+
+.who-can-we-help {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 3rem 0; }
+  .who-can-we-help__button {
+    min-width: 20rem;
+    margin-top: 1.5rem;
+    padding: 1rem 0 !important;
+    overflow: hidden !important;
+    position: relative;
+    transition: 1s;
+    background: none;
+    color: #ffffff;
+    border: 0.1rem solid #fa233b !important;
+    position: relative; }
+    @media only screen and (min-width: 22.5em) {
+      .who-can-we-help__button {
+        width: 25rem; } }
+    @media only screen and (min-width: 48em) {
+      .who-can-we-help__button {
+        width: 30rem; } }
+    .who-can-we-help__button:hover > span {
+      color: yellow !important;
+      text-transform: uppercase; }
+    .who-can-we-help__button .span32 {
+      position: relative;
+      z-index: 1;
+      color: #ffffff; }
+    .who-can-we-help__button .span32::before, .who-can-we-help__button .span32::after, .who-can-we-help__button .liquid32::before, .who-can-we-help__button .liquid32::after {
+      content: "";
+      position: absolute;
+      width: 140%;
+      height: 200%;
+      top: 5%;
+      left: 28%;
+      transform: translate(-50%, -75%);
+      background: transparent; }
+    .who-can-we-help__button .liquid32 {
+      position: absolute;
+      left: 0;
+      top: -8rem;
+      width: 100%;
+      height: 21rem;
+      background: #3772FF;
+      box-shadow: inset 0 0 50px #00000080;
+      transition: 0.5s;
+      overflow: hidden; }
+      .who-can-we-help__button .liquid32::before {
+        border-radius: 45%;
+        background: #1414142c;
+        animation: windWave 5s linear infinite; }
+      .who-can-we-help__button .liquid32::after {
+        border-radius: 40%;
+        background: #14141425;
+        animation: windWave 10s linear infinite; }
+
+.growth-image {
+  justify-content: flex-start !important;
+  align-items: flex-end;
+  margin-left: -8rem; }
+  @media only screen and (min-width: 48em) {
+    .growth-image {
+      margin-left: -5rem; } }
+  @media only screen and (min-width: 64em) {
+    .growth-image img {
+      position: absolute !important;
+      width: 30%;
+      height: auto;
+      left: 0 !important; } }
 
 .card:hover {
   transition: 0.6s;

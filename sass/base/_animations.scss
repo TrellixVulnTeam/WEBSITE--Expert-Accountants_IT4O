@@ -8,7 +8,7 @@
 */
 
 //service-button
-@keyframes animate5_1 {
+@keyframes focusBorder_1 {
   0% {
       transform: translateX(-100%);
   }
@@ -16,7 +16,7 @@
       transform: translateX(100%);
   }
 }
-@keyframes animate5_2 {
+@keyframes focusBorder_2 {
   0% {
       transform: translateY(-100%);
   }
@@ -24,7 +24,7 @@
       transform: translateY(100%);
   }
 }
-@keyframes animate5_3 {
+@keyframes focusBorder_3 {
   0% {
       transform: translateX(100%);
   }
@@ -32,12 +32,24 @@
       transform: translateX(-100%);
   }
 }
-@keyframes animate5_4 {
+@keyframes focusBorder_4 {
   0% {
       transform: translateY(100%);
   }
   100% {
       transform: translateY(-100%);
+  }
+}
+
+//who-can-we-help buttons
+@keyframes windWave{
+  0%
+  {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100%
+  {
+    transform: translate(-50%, -75%) rotate(360deg);
   }
 }
 

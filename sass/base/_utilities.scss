@@ -37,6 +37,7 @@
 //BUTTONS
 .btn{
   &:hover{
+    color: yellow !important;
     @include scale-up(1.04, 1);
   }
 }

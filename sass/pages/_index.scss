@@ -108,7 +108,7 @@
       width: 100%;
       height: 0.12rem;
       background: linear-gradient(to right, $primary-red, $primary-red);
-      animation: animate5_1 2s linear infinite;
+      animation: focusBorder_1 2s linear infinite;
     }
     .span5:nth-child(2) {
       position: absolute;
@@ -117,7 +117,7 @@
       width: 0.12rem;
       height: 100%;
       background: linear-gradient(to bottom, $primary-red, $primary-red);
-      animation: animate5_2 2s linear infinite;
+      animation: focusBorder_2 2s linear infinite;
       animation-delay: 1s;
     }
     .span5:nth-child(3) {
@@ -127,7 +127,7 @@
       width: 100%;
       height: 0.12rem;
       background: linear-gradient(to left, $primary-red, $primary-red);
-      animation: animate5_3 2s linear infinite;
+      animation: focusBorder_3 2s linear infinite;
     }
     .span5:nth-child(4) {
       position: absolute;
@@ -136,7 +136,7 @@
       width: 0.12rem;
       height: 100%;
       background: linear-gradient(to top, $primary-red, $primary-red);
-      animation: animate5_4 2s linear infinite;
+      animation: focusBorder_4 2s linear infinite;
       animation-delay: 1s;
     }
   }
