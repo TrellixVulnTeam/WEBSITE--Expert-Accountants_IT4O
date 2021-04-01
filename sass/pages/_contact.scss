@@ -1,9 +1,12 @@
-
 .hero-image {
-    background-image: url("../images/contact/contact.svg"); /* The image used */
-    height: 800px; /* You must set a specified height */
-    background-position: center center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: fit; /* Resize the background image to cover the entire container */
-  }
-  
+    background-image: url("../images/contact/contact.svg");
+    /* The image used */
+    height: 25rem;
+    /* You must set a specified height */
+    background-position: center center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    /* Resize the background image to cover the entire container */
+}
