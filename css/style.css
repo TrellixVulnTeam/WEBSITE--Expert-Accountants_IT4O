@@ -302,9 +302,6 @@ label, .box {
     .box-border {
       background-image: none; } }
 
-.background-light {
-  background-color: rgba(190, 190, 190, 0.075) !important; }
-
 /*components*/
 .accordion-button {
   padding: 1.5rem 0 !important; }
