@@ -215,6 +215,9 @@ label, .box {
     text-transform: uppercase;
     color: #ffffff !important; }
 
+#blogs h1 {
+  font-size: 3.3rem !important; }
+
 .responsive-element {
   width: 100%;
   min-height: auto; }
@@ -635,6 +638,9 @@ footer {
   -moz-filter: brightness(1);
   -ms-filter: brightness(1);
   filter: brightness(1); }
+
+#blogs .blog {
+  margin-top: 8rem; }
 
 .hero-image {
   background-image: url("../images/contact/contact.svg");
