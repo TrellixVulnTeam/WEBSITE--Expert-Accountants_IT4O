@@ -443,21 +443,22 @@ footer {
 .small-screen__contact-button {
   margin-top: 3rem !important; }
 
-#carouselFeedback .carousel-indicators button {
-  margin: 1rem; }
-
-#carouselFeedback .carousel-item {
+#carouselFeedback {
   width: 100%;
-  padding: 20rem 0 10rem 0; }
-  @media only screen and (min-width: 22.5em) {
-    #carouselFeedback .carousel-item {
-      padding: 15rem 0 10rem 0; } }
-  @media only screen and (min-width: 48em) {
-    #carouselFeedback .carousel-item {
-      padding: 10rem 0 10rem 0; } }
-
-#carouselFeedback .carousel-caption {
-  height: auto; }
+  height: 100%; }
+  #carouselFeedback .carousel-indicators button {
+    margin: 1rem; }
+  #carouselFeedback .carousel-item {
+    width: 100%;
+    padding: 20rem 0 10rem 0; }
+    @media only screen and (min-width: 22.5em) {
+      #carouselFeedback .carousel-item {
+        padding: 15rem 0 10rem 0; } }
+    @media only screen and (min-width: 48em) {
+      #carouselFeedback .carousel-item {
+        padding: 10rem 0 10rem 0; } }
+  #carouselFeedback .carousel-caption {
+    height: auto; }
 
 .our-services {
   display: flex;
