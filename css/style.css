@@ -291,6 +291,11 @@ label, .box {
   -moz-box-shadow: 1px 12px 13px -4px #c9cebd;
   box-shadow: 1px 12px 13px -4px #c9cebd !important; }
 
+.green-shadow-bottom {
+  -webkit-box-shadow: 1px 12px 13px -4px #c9cebd;
+  -moz-box-shadow: 1px 12px 13px -4px #c9cebd;
+  box-shadow: 1px 12px 13px -4px #c9cebd; }
+
 .box-border {
   background-image: linear-gradient(#fa233b, #fa233b), linear-gradient(#fa233b, #fa233b), linear-gradient(#fa233b, #fa233b), linear-gradient(#fa233b, #fa233b), linear-gradient(#c0bdbd23, #c0bdbd23);
   background-repeat: no-repeat;

@@ -83,6 +83,13 @@ box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
 box-shadow: 1px 12px 13px -4px rgba(201,206,189,1) !important;
 }
 
+.green-shadow-bottom{
+  -webkit-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+  -moz-box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+  box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
+  
+}
+
 //BORDER BOX
 .box-border {
     background-image: linear-gradient($primary-red, $primary-red),
