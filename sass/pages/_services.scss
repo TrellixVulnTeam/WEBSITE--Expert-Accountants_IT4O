@@ -3,3 +3,36 @@
         @include scale-up(1.05, 1);
   }
   }
+
+//   income tax calculator
+.taxCalculator, .vatCalculator{
+    background: white;
+    padding: 2rem;
+
+    //salary input field
+    input{
+        font-size: 1.8rem;
+    }
+    //labels
+    label{
+        padding-bottom: .2rem;
+        font-weight: bold;
+    }
+    //question fields
+    .question{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    //calculate button
+    .btn{
+        background-color: $primary-blue;
+        margin-top: 2rem;
+        color: white;
+    }
+    //displayed when after the calculation
+    .results{
+        display: none;
+    }
+
+}

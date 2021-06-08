@@ -606,6 +606,25 @@ footer {
   -ms-filter: brightness(1);
   filter: brightness(1); }
 
+.taxCalculator, .vatCalculator {
+  background: white;
+  padding: 2rem; }
+  .taxCalculator input, .vatCalculator input {
+    font-size: 1.8rem; }
+  .taxCalculator label, .vatCalculator label {
+    padding-bottom: .2rem;
+    font-weight: bold; }
+  .taxCalculator .question, .vatCalculator .question {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem; }
+  .taxCalculator .btn, .vatCalculator .btn {
+    background-color: #3772FF;
+    margin-top: 2rem;
+    color: white; }
+  .taxCalculator .results, .vatCalculator .results {
+    display: none; }
+
 .bd-placeholder-img:hover {
   transition: 0.6s;
   -webkit-transform: scale(1.4);
