@@ -35,12 +35,13 @@ footer{
      
       h5{
         //margin-bottom: 2rem;
-        //stext-decoration: underline $primary-red solid 1.2rem;
+        text-decoration: underline solid .1rem;
         margin-bottom: 1rem;   
         font-weight: bold;
       }
       li{
         margin-top: 2rem;
+        list-style-type: circle;
         @include respond(tab-port) {
           margin-top: 0.2rem;
         }

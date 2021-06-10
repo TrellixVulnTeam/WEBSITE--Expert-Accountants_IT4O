@@ -310,6 +310,12 @@ label, .box {
     .box-border {
       background-image: none; } }
 
+.width-70ch {
+  min-width: 70ch !important; }
+
+.o-x-hide {
+  overflow-x: hidden !important; }
+
 /*components*/
 .accordion-button {
   padding: 1.5rem 0 !important; }
@@ -401,10 +407,12 @@ footer {
     height: 15rem;
     width: auto; }
   footer h5 {
+    text-decoration: underline solid .1rem;
     margin-bottom: 1rem;
     font-weight: bold; }
   footer li {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    list-style-type: circle; }
     @media only screen and (min-width: 48em) {
       footer li {
         margin-top: 0.2rem; } }

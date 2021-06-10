@@ -114,3 +114,13 @@ box-shadow: 1px 12px 13px -4px rgba(201,206,189,1);
 .background-light{
  // background-color: rgba(206, 9, 9, 0.041) !important;
 }
+
+//min width of the section
+.width-70ch{
+  min-width: 70ch !important;
+}
+
+//overflow hide 
+.o-x-hide{
+  overflow-x: hidden !important;
+}
